@@ -16,7 +16,7 @@ The app's background features dynamic clouds that respond to your mouse movement
 ##Demo
 ![image](https://github.com/shresthaPandit/weather-forecast/assets/145762326/d4eb3a58-9983-47ac-ad1b-0246738b5775)
 
-You can try the project live here
+You can try the project live here : https://weather-forecast-qcpyytlp7-shresthapandits-projects.vercel.app
 
 ##Contributing
 Contributions are welcome! If you'd like to contribute, please follow the contribution guidelines.
