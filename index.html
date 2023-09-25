@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="response.css">
+    <script src="https://kit.fontawesome.com/5fa408a665.js" crossorigin="anonymous"></script>
+    <title>weather app</title>
+</head>
+<body>
+    <header id="credit"> 
+        <div id="namefoot"><h4>&#169 SHRESTHA PANDIT </h4>	</div>
+        <div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/shrestha-pandit-24bba8263/"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                <li><a href="https://github.com/shresthaPandit"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/shresthapandit"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+        </ul>
+            </div>
+</header>
+    <div class="container">
+    <div class="card">
+<div class="nav">
+    
+<input type="text" placeholder="ENTER CITY NAME">
+<button id="btn"> <img src="./images/search.png" alt="" ></button>
+</div>
+<div class="main">
+    <div class="temp"><img src="./images/clouds.png" alt="" srcset="" class="sun">
+    <h1>22°C</h1>
+<h2>New York</h2></div></div>
+<div class="main2">
+    <div class="humidity"><img src="./images/humidity.png" alt=""><h2 id="humiperc">50%</h2>
+  <h2 >Humidity</h2></div>
+    <div class="wind"><img src="./images/windblack.png" alt="" srcset=""><h2 id="windspeed">15km/h</h2>
+    <h2>Wind speed</h2></div>
+
+</div>
+
+
+
+
+    </div>
+  
+
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+
+    <script>
+        VANTA.CLOUDS({
+          el: ".container",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00
+        })
+        </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

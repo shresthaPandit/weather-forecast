@@ -1,0 +1,86 @@
+*{margin: 0px;
+padding: 0px;}
+
+body{background-color: rgb(15, 15, 15);
+width: 100%;
+height: 100%;}
+.container{width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 867px;
+    
+  }
+
+  .card {
+    margin: auto;
+    margin-top: 150px;
+    height: 500px;
+    width: 500px;
+    border-radius: 5%;
+    position: relative; /* Add this line to make the ::before pseudo-element work */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(243, 243, 244);
+    opacity: 0.3;
+    z-index: -1; /* Push the pseudo-element behind the content */
+    border-radius: 5%;
+  }
+  .nav{display: flex;
+justify-content: center;
+align-items: center; padding-top: 20px;}
+input{
+border-radius: 30px;
+  padding: auto;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button{border: none;
+    outline: none;
+    background: white;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    margin-left: 14px;   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+button img{width: 18px;}
+.main{text-align: center;color: aliceblue;  text-shadow: 1px 1px 6px #918d8d; font-family: 'Nabla', cursive;
+    font-family: 'Poppins', sans-serif;}
+.main img{width: 20%;}
+
+.main2{display: flex;align-items: center;justify-content: space-between;margin:70px 20px; color: aliceblue;  text-shadow: 2px 2px 5px #696363;}
+#humiperc{padding-left: 24px;}
+.humidity img{width: 31%;
+    padding-left: 14px;
+    opacity: 0.6;
+    padding-bottom: 8px;
+  }
+.humidity{flex: 1;}
+
+#windspeed{padding-bottom: 2px;
+    padding-right: 20px;}
+.wind{text-align: end; flex: 1;}
+.wind img{width: 40%;
+    padding-right: 17px;
+    opacity: 0.6;
+  }
+  .wind h2{padding-bottom: 20px;
+  }
+  #credit{z-index: 1;
+    position: absolute;display: flex;width: 100%;
+    justify-content: center; color: aliceblue; text-shadow: 2px 2px 5px #696363 ;padding-top: 10px;}
+#credit ul{text-decoration: none; display: flex;gap: 5px;padding-left: 10px;}
+li{list-style: none;}
+a{color: aliceblue}
+a:hover{color:  #4491d5;text-shadow: 2px 2px 5px #696363;}
+button:hover{ cursor: pointer;}
