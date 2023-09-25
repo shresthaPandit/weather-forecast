@@ -19,24 +19,24 @@ const generateTemp = (city) => {
       humidity.innerHTML = data.main.humidity + "%";
 if(data.weather[0].main=='clouds'){
 
-    weatherIcon.src="images/clouds.png"
+    weatherIcon.src="/clouds.png"
 }
 else if(data.weather[0].main=='Clear'){
-    weatherIcon.src="images/clear.png";
+    weatherIcon.src="/clear.png";
 }
 
 else if(data.weather[0].main=='Rain'){
-    weatherIcon.src="images/rain.png";
+    weatherIcon.src="/rain.png";
 }
 
 else if(data.weather[0].main=='Drzzle'){
 
-    weatherIcon.src="images/drizzle.png";
+    weatherIcon.src="/drizzle.png";
 }
 
 else if(data.weather[0].main=='snow'){
 
-    weatherIcon.src="images/snow.png";
+    weatherIcon.src="/snow.png";
 }
 
     })
